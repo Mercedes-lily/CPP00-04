@@ -2,6 +2,8 @@
 #include "HumanA.hpp"
 #include "HumanB.hpp"
 
+//verifier si on peur changer le main pour 		jim.setWeapon(&club); et changer la fonction fr setWeapon
+
 int main()
 {
 	{	
