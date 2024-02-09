@@ -17,17 +17,12 @@ std::string	HumanB::getName(void) const
 	return(this->_name);
 }
 
-std::string	HumanB::getType(void) const
-{
-	return(this->_weapon->getType());
-}
-
 void	HumanB::attack() const
 {
-	std::cout << this->getName() <<  " attacks with their " << this->getType() << std::endl;
+	std::cout << this->getName() <<  " attacks with their " << this->_weapon->getType() << std::endl;
 }
 
-void	HumanB::setWeapon(Weapon weapon)
+void	HumanB::setWeapon(Weapon &weapon)
 {
 		this->_weapon = &weapon;
 }

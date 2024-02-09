@@ -1,5 +1,6 @@
 #include "Account.hpp"
 #include <iostream>
+#include <ctime>
 
 int	Account::_totalAmount = 0;
 int	Account::_totalNbDeposits = 0;
@@ -47,3 +48,9 @@ void	Account::displayAccountsInfos(void)
 {
 	std::cout << "Timestamp " << "accounts:" << getNbAccounts() << ";total:" << getTotalAmount() <<";deposits:" << getNbDeposits() << ";withdrawals:" << getNbWithdrawals() << std::endl;
 }
+
+void	Account::_displayTimestamp( void )
+{
+	struct tm *localtime(const time_t *time);
+}
+

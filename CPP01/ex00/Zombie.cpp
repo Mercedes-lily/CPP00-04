@@ -4,7 +4,7 @@
 
 void	Zombie::announce(void) const
 {
-	std::cout << "\033[1;37m" << this->_name << "\033[0;91m : BraiiiiiiinnnzzzZ..." << std::endl;
+	std::cout << "\033[1;32m" << this->_name << "\033[0;91m : BraiiiiiiinnnzzzZ..." << std::endl;
 }
 
 Zombie::Zombie(std::string name) : _name(name)
