@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 #include "Contact.hpp"
 
 Contact::Contact(void)
@@ -40,14 +41,14 @@ void    Contact::put_infos(void)
 {
     std::cout << "Please enter the infos for the contact" << std::endl;
     std::cout << "First Name : ";
-    std::cin >> this->firstName;
+    getline(std::cin, this->firstName);
     std::cout << "Last Name : ";
-    std::cin >> this->lastName;
+    getline(std::cin, this->lastName);
     std::cout << "Nickname : ";
-    std::cin >> this->nickname;
+    getline(std::cin, this->nickname);
     std::cout << "Phone Number : ";
-    std::cin >> this->phoneNumber;
+    getline(std::cin, this->phoneNumber);
     std::cout << "Darkest Secret : ";
-    std::cin >> this->darkestSecret;
+    getline(std::cin, this->darkestSecret);
     std::cout << "Contact infos completed!" << std::endl;
 }

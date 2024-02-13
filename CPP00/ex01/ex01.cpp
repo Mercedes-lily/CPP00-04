@@ -8,8 +8,9 @@ int main()
     PhoneBook   repertory(0);
 
     std::cout << "\033[0;35mWelcome in your awesome PhoneBook" << std::endl;
-    while(std::cout << " >   " && std::cin >>entry)
+    while(!std::cin.eof())
     {
+        std::cout << " >   " && getline(std::cin, entry);
         if (entry.compare("ADD") == 0)
             repertory.add();
         else if (entry.compare("SEARCH") == 0)
